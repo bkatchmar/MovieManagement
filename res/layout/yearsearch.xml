@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000088">
+    
+    <TextView
+	    android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:text="All Movies For Current Year"
+    	android:textColor="#FFFFFF"
+    	android:gravity="center_horizontal"
+    	android:paddingBottom="7sp"
+    	android:paddingTop="7sp" />
+    
+	<TableLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		
+		<TableRow android:gravity="center_horizontal">
+			<TextView
+				android:text="Year: "
+				android:textColor="#FFFFFF" />
+			<EditText
+				android:id="@+id/txtWhatYear"
+				android:numeric="integer"
+				android:maxLength="4" />
+			<Button
+				android:id="@+id/btnAll"
+				android:text="All"
+				android:layout_width="95sp" />
+			<Button
+				android:id="@+id/btnBest"
+				android:text="Best Rated"
+				android:layout_width="95sp" />
+		</TableRow>
+		
+	</TableLayout>
+    
+    <ListView
+    	android:id="@+id/lstResults"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:drawSelectorOnTop="false" />
+    
+</LinearLayout>

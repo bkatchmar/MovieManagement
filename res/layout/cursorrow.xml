@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000088">
+    	
+    <TableLayout android:layout_width="fill_parent"
+    	 android:layout_height="wrap_content"
+    	 android:stretchColumns="2">
+    	 
+		<TableRow>
+			<TextView  
+	    		android:id="@+id/rowMovieName"
+			    android:layout_width="wrap_content" 
+	    		android:layout_height="wrap_content" 
+    			android:text="Name"
+	    		android:textColor="#FFFFFF"
+	    		android:layout_gravity="left"
+	    		android:paddingLeft="3sp"
+	    		android:textStyle="bold"
+	    		android:textSize="16sp"
+	    		android:paddingTop="5sp"
+	    		android:paddingBottom="5sp" />
+    		
+    		<TextView  
+    			android:id="@+id/rowMovieID"
+		    	android:layout_width="wrap_content" 
+			    android:layout_height="wrap_content" 
+    			android:text=""
+    			android:textColor="#FFFFFF"
+    			android:visible="false"
+		    	android:visibility="invisible" />
+    		
+	    	<TextView  
+    			android:id="@+id/rowMovieDetail"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content" 
+    			android:text=""
+    			android:textColor="#FFFFFF"
+    			android:layout_gravity="right"
+    			android:textStyle="bold"
+    			android:textSize="16sp"
+    			android:paddingTop="5sp"
+	    		android:paddingBottom="5sp"
+	    		android:paddingRight="10sp"/>
+		</TableRow>
+    </TableLayout>
+    
+</LinearLayout>

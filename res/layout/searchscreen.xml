@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000088">
+    
+    <TextView  
+	    android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content" 
+    	android:text="Search For Movies"
+    	android:textColor="#FFFFFF" 
+    	android:gravity="center_horizontal"
+    	android:paddingBottom="7sp"
+    	android:paddingTop="7sp" />
+    
+    <TableLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:stretchColumns="0">
+		
+		<TableRow>
+			<EditText
+				android:id="@+id/txtMovieSearch"
+    			android:layout_width="fill_parent"
+	    		android:layout_height="wrap_content" />
+	    		
+	    	<Button
+				android:id="@+id/btnSearch"
+				android:layout_width="100sp"
+				android:layout_height="wrap_content"
+				android:text="Search" />
+		</TableRow>
+		
+	</TableLayout>
+    	
+    <ListView
+    	android:id="@+id/lstResults"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:drawSelectorOnTop="false" />
+    	
+</LinearLayout>

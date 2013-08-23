@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000088">
+	<TextView  
+	    android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content" 
+    	android:text="Welcome To Movie Management"
+    	android:textColor="#FFFFFF" 
+    	android:gravity="center_horizontal"
+    	android:paddingBottom="7sp"
+    	android:paddingTop="7sp" />
+    
+    <TableLayout android:layout_width="fill_parent"
+    	 android:layout_height="wrap_content"
+    	 android:stretchColumns="1">
+    	
+    	<TableRow>
+    		<TextView  
+				android:text="Movie Name" android:layout_width="wrap_content"/>
+    		<EditText 
+    			android:id="@+id/txtMovieName"
+    			android:layout_width="fill_parent"
+    			android:layout_span="2" />
+    	</TableRow>
+    	
+    	<TableRow>
+    		<TextView  
+				android:layout_width="fill_parent"
+    			android:text="Release Date " />
+    		<TextView  
+    			android:id="@+id/lblMovieDateAndTime"
+				android:layout_width="fill_parent"
+    			android:text=""
+    			android:layout_gravity="center_horizontal"
+    			android:textStyle="bold" />
+    		<Button
+				android:id="@+id/btnSetDate"
+				android:layout_height="wrap_content"
+				android:text="Set" android:layout_width="50sp"/>
+    	</TableRow>
+    	
+    	<TableRow>
+    		<TextView  
+				android:layout_width="fill_parent"
+    			android:text="Want DVD" />
+    		<CheckBox
+    			android:id="@+id/chkWantDVD"
+    			android:layout_width="fill_parent"
+    			android:layout_height="wrap_content" />
+    	</TableRow>
+    	
+    	<TableRow>
+    		<TextView  
+				android:layout_width="fill_parent"
+    			android:text="Have DVD" />
+    		<CheckBox
+    			android:id="@+id/chkHaveDVD"
+    			android:layout_width="fill_parent"
+    			android:layout_height="wrap_content" />
+    	</TableRow>
+    	
+    	<TableRow>
+    		<TextView  
+				android:layout_width="fill_parent"
+    			android:text="Rating" />
+    		<Spinner 
+    			android:id="@+id/ddlRatings"
+    			android:layout_width="wrap_content"
+    			android:layout_height="wrap_content" />
+    	</TableRow>
+    </TableLayout>
+    
+    <Button
+		android:id="@+id/btnAdd"
+		android:layout_width="200sp"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:text="Enter Movie" />
+</LinearLayout>

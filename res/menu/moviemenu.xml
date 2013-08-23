@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:id="@+id/monthsearch" android:title="Month Search" android:icon="@drawable/calendar" />
+	<item android:id="@+id/yearsearch" android:title="Year Search" android:icon="@drawable/year" />
+	<item android:id="@+id/dvd" android:title="To Get On Home Video" android:icon="@drawable/disc" />
+	<item android:id="@+id/search" android:title="Search" android:icon="@drawable/search" />
+	<item android:id="@+id/about" android:title="About" android:icon="@drawable/question" />
+	<item android:id="@+id/close" android:title="Close" android:icon="@drawable/cancel" />
+</menu>
